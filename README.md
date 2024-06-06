@@ -14,6 +14,5 @@ A simple game where two players fight in an arena, taking turns to attack and de
 
 3. Run tests
    ```bash
-   npm test
+   node test/test.mjs
 
-   
