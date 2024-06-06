@@ -34,21 +34,3 @@ async function main() {
 }
 
 main();
-
-const Player = require("./Player");
-// const Game = require('./Game');
-
-// const input = [];
-// process.stdin.on('data', function(data) {
-//     input.push(data.toString().trim());
-//     if (input.length === 8) {
-//         const player1 = new Player(input[0], parseInt(input[1]), parseInt(input[2]), parseInt(input[3]));
-//         const player2 = new Player(input[4], parseInt(input[5]), parseInt(input[6]), parseInt(input[7]));
-//         const game = new Game(player1, player2);
-//         game.playGame();
-//         process.stdin.end();
-//     }
-// });
-
-// console.log("Enter details for Player 1 (name, health, strength, attack):");
-// console.log("Enter details for Player 2 (name, health, strength, attack):");

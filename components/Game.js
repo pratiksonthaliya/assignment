@@ -27,7 +27,16 @@ class Game {
   }
 
   isGameOver() {
-    return !this.player1.isAlive() || !this.player2.isAlive();
+    if (!this.player1.isAlive()) {
+      this.player2.winner = true;
+      return true;
+    }
+    if (!this.player2.isAlive()) {
+      console.log("hi");
+      this.player1.winner = true;
+      return true;
+    }
+    return false;
   }
 
   playGame() {
@@ -36,7 +45,7 @@ class Game {
       this.playTurn();
     }
 
-    const winner = this.player1.isAlive() ? this.player1 : this.player2;
+    const winner = this.player1.winner ? this.player1 : this.player2;
     console.log(`${winner.name} wins the game!`);
   }
 }
