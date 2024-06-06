@@ -4,6 +4,7 @@ class Player {
     this.health = health;
     this.strength = strength;
     this.attack = attack;
+    this.winner = false;
   }
 
   isAlive() {
